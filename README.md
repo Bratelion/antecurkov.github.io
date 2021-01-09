@@ -1,3 +1,3 @@
-# antecurkov.github.io
+# bratelion.github.io
 
 Portfolio of Ante Čurkov
