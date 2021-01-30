@@ -10182,5 +10182,6 @@ button#dark-mode:hover {
   button#dark-mode {
     position: initial;
     margin-top: 0;
+    opacity: 1;
   }
 }
