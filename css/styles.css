@@ -10169,7 +10169,8 @@ button#dark-mode {
   text-transform: uppercase;
   background-color: black;
   color: white;
-  font-weight: 750;
+  font-size: 15px;
+  font-weight: 700;
   opacity: 0.65;
 }
 button#dark-mode:hover {
