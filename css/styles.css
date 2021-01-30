@@ -60,6 +60,7 @@ html {
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
+  background-color: white;
 }
 
 body {
@@ -10125,6 +10126,7 @@ section.resume-section .resume-section-content {
     min-height: 100vh;
   }
 }
+
 @media (min-width: 992px) {
   section.resume-section {
     padding-left: 3rem;
@@ -10136,4 +10138,48 @@ section.resume-section .resume-section-content {
 
 .fa-check {
   color: var(--middle);
+}
+
+.dark-mode {
+  filter: invert(1);
+  transition: filter ease-in-out 1s;
+}
+
+nav.dark-mode img  {
+  filter: invert(1);
+  transition: filter ease-in-out 1s;
+}
+
+.light-mode {
+  filter: invert(0);
+  transition: filter ease-in-out 1s;
+}
+
+nav.light-mode img  {
+  filter: invert(0);
+  transition: filter ease-in-out 1s;
+}
+
+button#dark-mode {
+  margin-top: 1em;
+  position: absolute;
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  font-weight: 750;
+  opacity: 0.65;
+}
+button#dark-mode:hover {
+  opacity: 1;
+  transition: opacity ease-in-out .3s;
+}
+
+@media screen and (max-width: 991.98px){
+  button#dark-mode {
+    position: initial;
+    margin-top: 0;
+  }
 }
