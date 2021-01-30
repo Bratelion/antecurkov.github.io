@@ -10183,5 +10183,6 @@ a#dark-mode:hover {
     position: initial;
     margin-top: 0;
     opacity: 1;
+    margin-left: -34px;
   }
 }
