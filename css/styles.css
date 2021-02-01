@@ -10145,7 +10145,7 @@ section.resume-section .resume-section-content {
   transition: filter ease-in-out 1s;
 }
 
-nav.dark-mode img  {
+nav.dark-mode img {
   filter: invert(1);
   transition: filter ease-in-out 1s;
 }
@@ -10185,4 +10185,8 @@ a#dark-mode:hover {
     opacity: 1;
     margin-left: -34px;
   }
+}
+
+.bg {
+  background-color: white;
 }
