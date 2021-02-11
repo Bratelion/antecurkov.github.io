@@ -47,13 +47,11 @@
                 $("#dark-mode").html("Light Mode");
                 $(".container-fluid").toggleClass("dark-mode").toggleClass("light-mode");
                 $("nav").toggleClass("dark-mode").toggleClass("light-mode");
-                $("#favicon").attr("href","assets/img/favicon-dark.ico");
             }
             else {
                 $("#dark-mode").html("Dark Mode");
                 $(".container-fluid").toggleClass("light-mode").toggleClass("dark-mode");
                 $("nav").toggleClass("light-mode").toggleClass("dark-mode");
-                $("#favicon").attr("href","assets/img/favicon-light.ico");
             }
         });
       });

@@ -10140,17 +10140,21 @@ section.resume-section .resume-section-content {
   color: var(--middle);
 }
 
-.dark-mode {
+.dark-mode, .dark-mode svg, .dark-mode a.social-icon, .dark-mode .text-primary {
   filter: invert(1);
   transition: filter ease-in-out 1s;
 }
 
 nav.dark-mode img {
-  filter: invert(1);
+  filter: invert(0);
+  transition: filter ease-in-out 1s;
+}
+.dark-mode.bg-primary {
+  filter: invert(0);
   transition: filter ease-in-out 1s;
 }
 
-.light-mode {
+.light-mode, .light-mode svg, .light-mode a.social-icon, .light-mode .text-primary {
   filter: invert(0);
   transition: filter ease-in-out 1s;
 }
@@ -10172,6 +10176,7 @@ a#dark-mode {
   font-weight: 700;
   box-shadow: 0 3px 5px black;
   cursor: pointer;
+  opacity: .8;
 }
 a#dark-mode:hover {
   opacity: 1;
@@ -10189,4 +10194,8 @@ a#dark-mode:hover {
 
 .bg {
   background-color: white;
+}
+
+.cryptedmail:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
 }
